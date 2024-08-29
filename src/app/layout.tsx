@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 async function getUserData() {
   const res = await fetch('https://api.github.com/users/leerob');
   // 你可以根据需要处理错误和状态码
-  console.log(res)
   if (!res.ok) {
     throw new Error('Failed to fetch data');
   }
